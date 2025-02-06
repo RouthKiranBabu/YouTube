@@ -1,3 +1,4 @@
+// ctrl + shift + o -> Adds necessary module after writing necessary script
 package pack1;
 
 import org.openqa.selenium.WebDriver;
