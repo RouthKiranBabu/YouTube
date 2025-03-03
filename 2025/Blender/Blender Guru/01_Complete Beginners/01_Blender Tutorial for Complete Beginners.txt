@@ -1,0 +1,17 @@
+Video: https://www.youtube.com/watch?v=B0J27sf9N1Y&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z&index=2
+
+To Add Primitive like cube, Sphere: 
+[shift + a] in the Layout or [Layout -> Add].
+Select an item and click [g] -> To Move.
+[Number pad 0] -> For Camera View.
+Select item and [g] -> grab Movement -> [x] to move along x direction same for y and z.
+Similar to [g] for garb we have [s] for scale and [r] for Rotate.
+Eg: Scale along x[s -> x], Rotate along x[r -> x].
+
+To take the image of the Object:
+1. Select the camera View [Numpad 0]
+2. Click -> [n] to Open and close Properties.
+3. View
+4. Lock -> Camera to View
+5. Change as per your need
+6. In Properties -> Deselect Lock -> Camera to View
