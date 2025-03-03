@@ -1,0 +1,23 @@
+[Select Item -> [F9]] -> For More Modification.
+	Major Segment - high value -> Leads Slow to render
+
+[Select -> right Click -> Shade Smooth] -> Smooths the surface
+
+To Smooth the Curve:
+Add Modifier -> Generate -> Sub Division Surface
+	Levels Viewport Makes the curve Smoother
+
+Makes CPU Subdivision:
+Edit -> Preferences -> Viewport -> Subdivision GPU
+
+[Select Object -> Go to Edit Mode]
+	Each node Represents Vertices/Vertex
+	Line -> Edge
+	Single Loop -> Face
+[Tab again and again] -> To switch between Object and Edit mode
+We don't have to move the node one by one for realistic Object randomly then we can use:
+[Select the Node -> o] For Grab and Move [g], You will see Circle and Around it and other nodes get Moves lightly.
+[Select the Node -> o + Mouse Scroll] For Modifying Circle of Modification.
+
+[Alt + Edge] -> Selects all the edge Making a loop.
+Then You can Scale[s]
