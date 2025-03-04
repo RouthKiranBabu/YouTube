@@ -1,0 +1,45 @@
+For Duplicate:
+	Layout -> Duplicate Objects[Shift D]
+[Shift + d] -> Right Click to Remain in Same Location.
+
+Double Click on the Object to Rename the Object or F2.
+
+[Shift + alt + Edge] -> Select multiple loops or Faces.
+
+[Alt + z] -> To Toggle X-Ray, To watch the nodes and Edges.
+Then if you select the nodes it will also select the nodes which are back of it.
+
+In the Object Mode[Tab] and Turn of X-Ray -> There's a Flickering.
+
+For the icing the cover of donut:
+[Add Modifier -> Generate -> Solidify] -> Makes the object More thicker so it flickers.
+Offset from -1 to 1. Modify the Thickness.
+To look smooth: Right click on the Object and Select the Shade Smooth.
+
+In the Edit Mode, For the icing Object
+Make Edit Mode of Solidify(blue) -> Shows smooth object
+Edit Mode of Solidify(non blue) -> Shows Lines of the object
+
+Procedure:
+1. icing object: Turn off the Solidify Edit mode To see the lines.
+2. Enable Snap(Magnet icon to blue) and Choose Face Project.
+3. Select a Node -> [g] for grab along [z] direction.
+4. [Tab] -> Go to Object Mode.
+5. Under icing object subdivision -> Click down arrow -> Apply
+6. [Tab] -> Go to Edit mode to see the modified number of lines or Faces.
+7. Turn on X-Ray -> [g] -> [z] to grab and move the node selected.
+8. Turn on Solidify Edit mode where you can see icing object moves along the donut object.
+
+[Edit mode -> Select -> More/Less] has
+[ctrl + (Number Pad +)] -> To Select More rings
+[ctrl + (Number Pad -)] -> To Reduce number of rings
+
+[Under Mesh Show/hide] has
+[h] -> For Hide
+[alt + h] -> To Bring back
+
+Add subdivision below the Solidify where under the edge data make Crease Inner to 1 to make the cream attach to Donut Realistic.
+
+To Extrude[e]:
+After Selecting Two Nodes -> Extrude[e].
+
