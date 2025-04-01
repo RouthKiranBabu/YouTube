@@ -1,3 +1,8 @@
+<div align = "right">
+ 
+For Solution 👉 [Click Here](https://github.com/RouthKiranBabu/YouTube/tree/main/2025/000_Problem_Solving)
+</div>
+
 # Here’s a list of 100+ essential programming problems to improve problem-solving skills, categorized by difficulty:
 
 ## Basic (Warm-up)
