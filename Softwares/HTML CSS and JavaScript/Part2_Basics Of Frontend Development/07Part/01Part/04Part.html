@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part4</title>
+    </head>
+    <style>
+        img{
+            height: 20%;
+            width: 20%;
+        }
+    </style>
+    <body>
+        <!-- <img src="https://w0.peakpx.com/wallpaper/800/51/HD-wallpaper-krishna-pics-painting-art-lord-god.jpg" alt="Image Not found" /> -->
+        
+        <img src="jagatGuruGodKrishna.jpg" alt="Hare Krishna" />
+        <div>
+            <p>JagatGuru: <span id = "likeCount"></span></p>
+            <p>God: <span id = "dislikeCount"></span></p>
+        </div>
+        <div><button id = "like">Vote JagatGuru</button>
+            <button id = "dislike">Vote God</button></div>
+        
+    </body>
+</html>
+
+<script>
+    document.getElementById("like").addEventListener('click', likeFun);
+    var likeCount = 0;
+    function likeFun(){
+        likeCount++;
+        document.getElementById('likeCount').innerText = likeCount;
+    }
+
+    document.getElementById("dislike").addEventListener('click', dislikeFun);
+    var dislikeCount = 0;
+    function dislikeFun(){
+        dislikeCount++;
+        document.getElementById('dislikeCount').innerText = dislikeCount;
+    }
+</script>
+
+<!-- 
+when the page is refreshed then the numbers count starts from 
+the 0 again so to store the previous value we need to use the 
+local storage
+-->

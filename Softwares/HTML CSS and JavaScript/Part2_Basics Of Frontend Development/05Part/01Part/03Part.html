@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>part03: With Form Tag</title>
+    </head>
+    <body>
+        <form id="LoginForm">
+            <input id = "username" type="text" placeholder="User Name" />
+            <input id = "password" type="text" placeholder="Enter Password" />
+            <input type = "submit" />
+        </form>
+        <h1 id = "head"></h1>
+    </body>
+</html>
+
+<script>
+    document.querySelector('#LoginForm').addEventListener('submit', printValues);
+    function printValues(){
+        // Now due to preventDefault it shows value at the console of inspect
+        event.preventDefault();
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        console.log(username, password);
+        // <h1 id = "head"></h1> <- Writing the innerText of id head
+        // but we have not created the tag
+        document.querySelector('#head').innerText = username;
+    }
+</script>

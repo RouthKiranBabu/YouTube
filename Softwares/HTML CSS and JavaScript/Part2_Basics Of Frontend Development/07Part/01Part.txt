@@ -1,0 +1,76 @@
+local Storage: is a property that allows javascript sites and apps to save
+key-vlaue pairs in a web browser with no expiration date.
+
+when to use the local storage?
+you should only use local storage when storing insensitive information.
+local storage can help in storing temporary data before it is pushed
+to the server.
+
+limitations:
+the major limitations of local storage are:
+insecure data.
+synchronous operations.
+limited storage capacity.
+
+in local storage synchronous operations is not possible.
+local storage is the mini database or the server it is meant 
+in the term of size means images and videos cannot be stored but 
+can store the image urls and the videos urls.
+
+to use the local storage in your web applications, there are 
+four methods to choose from:
+setItem(): add key and value to local storage 
+getItem(): this is how you get items from local storage
+removeItem(): remove an item by key from local storage 
+clear(): clear all local storage
+
+set item has two arguments first item is key and next is value. we 
+know the local storage stores the value in form of key value pairs.
+
+local storage stores only strings, boolean and numbers
+
+adding an item to local storage:
+syntax:- localStorage.setItem("key", "value")
+Note: Both keys and value should be in form of string.
+
+storing a string into localStorage
+syntax:
+localStorage.setItem('name', "MASAI School");
+
+storing an array or object into localStorage
+To store arrays or objects, you would have to first convert them
+to strings and then store them in local storage.
+
+JavaScript Object Notation(JSON) is a representation of structured
+data based on JavaScript object syntax.
+
+Data is sent and received on Internet in JSON(mostly).
+It is basd on Javascript object literals.
+used with network requests(AJAX etc).
+
+Thus, JSON can be used to send data from the front-end to the 
+back-end, and vice-versa.
+
+Many popular databases like MongoDB, couchDB, MySQL, Oracle and
+PostgreSQL also have extensive support for JSON.
+
+Think of JSON as an universal data format on the Internet.
+
+Important notes about JSON:
+It's just a data format an does not contain any functions/methods
+Even a single misplaced comma can damage the whole file
+Only quoted strings can be used as properties
+
+--------------------------------------------------
+Conversion between JSON and Js Objects 
+client(Monitor) to web server(CPU)/local storage:
+convert to JSON strings 
+JSON.stringify(obj)
+
+Web server(CPU)/local storage to Client:
+Convert back to objects 
+JSON.parse(data)
+--------------------------------------------------
+
+JSON will become more relevant when we learn about API's 
+and retrieving data from them.

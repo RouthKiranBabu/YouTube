@@ -1,0 +1,31 @@
+branchname is created by user.
+to see the list of banches and the selected branch path:
+git branch --list 
+
+to create the branch:
+git branch "branchname"
+
+to change the branc path:
+git checkout "branchname"
+
+suppose you have added some file(htmlfile.html) in the repository folder.
+
+to push from the new branch:
+git push origin "branchname"
+
+in the github website repositories:
+after refreshing the github page we have compare and pull request button
+but in the main branch we have not got any changes like htmlfile.html 
+file added if you search
+but when you change the branch you will have readme.md and htmlfile.html
+file 
+
+to merge:
+go to the pull request tab present between issues and actions 
+click: new pull request 
+make base=main <- compare=branchname
+click: create pull request
+(you can set reviewers ok for others as review)
+click: create pull request 
+click: merge pull request
+click: confirm merge 

@@ -1,0 +1,62 @@
+div{
+    /*Makes side by side*/
+    display: flex;
+    /*Provides gap in between*/
+    justify-content: space-around;
+    margin-top: 30px;
+}
+form{
+    width: 30%;
+    /*to get auto toward the left hand side and not top and bottom*/
+    margin: 0 auto;
+}
+label{
+    font-size: 20px;
+    margin-top: 20px;
+}
+table{
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+table th, table td{
+    border: 2px solid red;
+    padding: 8px;
+    text-align: center;
+}
+table tr:nth-child(even){
+    background-color: lightgreen;
+}
+table tr:nth-child(odd){
+    background-color: lightblue;
+}
+table th{
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
+input, select{
+    width: 100%;
+    /*top and bottom padding 10px
+    and right and left padding is 0px*/
+    padding: 10px 0;
+    margin-top: 10px;
+}
+input[type = "submit"]{
+    background-color: blue;
+    color:white;
+    width: 50%;
+    /*top gap between border and outer 20px
+    left and right gap 0px at middle place
+    and the remaining 0px for the bottom gap
+    margin: 20px 0px 0px;*/
+    margin: 10px auto;
+    /*makes a cursor as the pointer*/
+    cursor: pointer;
+    /*border-color: red;*//*border-color: none*/
+    /*no need to set the border color as the border is none*/
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+}

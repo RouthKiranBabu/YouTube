@@ -1,0 +1,37 @@
+<!--
+DOM: Document Object Model
+Document is linked with the Root element<html>
+
+this root element is divided into two types:
+Element<head> related with Element<title> related with Text"My Text"
+
+Element<body> is related with Element<h1> and element<p>
+element<h1> related with text"My Header"
+element<p> related with Text"My Paragraph"
+
+to write the javascript inside the html code we need to 
+use the script tag like 
+<script></script>
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+        <h1>Welcome to DOM</h1>
+    </body>
+</html>
+
+<script>
+    /*to view this in the html page go to inspect and then 
+    select the console tab which shows the line of this console.log
+    is present*/
+    console.log("This is present in the script tag of HTML page.");
+    console.log(document.title);
+    console.log(document.head);
+    /*Which shows the like alert, atob etc which also have the
+    document, title: "DOM" which is the key value pair*/
+    console.log(window);
+    console.log(document);
+</script>

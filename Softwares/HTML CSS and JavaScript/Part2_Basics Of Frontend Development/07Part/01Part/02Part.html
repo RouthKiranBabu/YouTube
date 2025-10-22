@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part02</title>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+<script>
+    //localStorage.getItem(keyvalue)
+    var name = localStorage.getItem("StudentName");
+    console.log(name, typeof name);
+    /*Output
+    NameValue1 string*/
+
+    var arr = localStorage.getItem("StudentArr");
+    console.log(arr, typeof arr);
+    /*Output
+    1,2,3,4 string*/
+
+    var studentObj = {
+        name: "StudentName",
+        age: 12,
+        gender: "Male"
+    };
+
+    /*
+    In the json we have the double quotation marks like ".
+    single quotation marks like '.
+    quotation marks is present for the keys like name, age 
+    and gender.
+    */
+    var studentJSON = {
+        "name": "StudentNameJson",
+        "age": 12,
+        "gender": "Male"
+    }
+    /*We cannot store arrays directly into the local storage
+    so we have to use the JSON in order to convert this array
+    to string so to convert that we have to use the JSON.stringify*/
+</script>

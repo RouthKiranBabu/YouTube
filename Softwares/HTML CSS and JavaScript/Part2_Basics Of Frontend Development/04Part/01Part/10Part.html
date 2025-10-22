@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part8</title>
+    </head>
+    <body>
+        <p class = "intro">This is a paragraph.</p>
+        <p class = "intro">This is paragraph2.</p>
+        <p class = "intro">This is paragraph3.</p>
+        <h1>This is header one.</h1>
+    </body>
+</html>
+<script>
+    /*querySelector only checks the first class which satisfy
+    the value
+    where as querySelectorAll selects all just need to provide the 
+    additional index value*/
+    var para = document.querySelectorAll('.intro');
+    for(var index = 0; index < para.length; index ++){
+        para[index].style.color = "teal";  
+        para[index].style.fontWeight = "bold";
+    }
+    
+</script>

@@ -1,0 +1,30 @@
+<!--
+selecting an element by ID
+document.getElementById("element_id")
+
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part4</title>
+    </head>
+    <style>
+        
+    </style>
+    <body>
+        <p id = "para">This is <i>para</i> tag.</p>
+        <!--i tag is used for italic-->
+        <h1 id = "head">This is <i>header</i> one.</h1>
+    </body>
+</html>
+<script>
+    //console.log(document);//which shows the document
+    //to get the element by the id name
+    console.log(document.getElementById("para"));
+    console.log(document.getElementById("head"));
+
+    //using the innerText, innerHTML to see the content
+    console.log(document.getElementById("para").innerHTML);
+    console.log(document.getElementById("head").innerText);
+</script>

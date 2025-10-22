@@ -1,0 +1,15 @@
+If one person created the repository and this repository must also be used by the teammates 
+having 2 to more persons for that:
+go to repository settings -> collaborators -> send SMS -> Provide Authentication Code -> add people(By providing GitHub username or email)
+
+the email is sent to them if they accept they get added as the collaborators.
+
+they can create their own new branches and do the same things.
+
+go get the things done by others in separate branch
+where I am at some other branch:
+git pull origin "branch-name"
+
+or we can pull the main or the master branch by:
+git pull origin
+

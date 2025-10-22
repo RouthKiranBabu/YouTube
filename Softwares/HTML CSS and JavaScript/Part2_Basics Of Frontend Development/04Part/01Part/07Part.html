@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part6</title>
+    </head>
+    <body>
+        <!--different way of providing the value-->
+        <select name="" id="gender">
+            <option value="gender">Gender</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="others">others</option>
+        </select>
+        <button onclick="selectValue()">Submit</button>
+        <h1 id = "output"></h1>
+    </body>
+</html>
+<script>
+    function catchValue(){
+        var inputData = document.getElementById("input");
+        //to get the value given by the box to the console
+        console.log(inputData.value);
+        document.getElementById("output").innerText = inputData.value;
+    }
+    function selectValue(){
+        var gen = document.getElementById('gender');
+        console.log(gen.value);
+    }
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timer</title>
+    </head>
+    <body>
+        <!-- <h1>0</h1> -->
+        <h1></h1>
+        <button onclick = "start()">Start Timer</button>
+        <button onclick = "stop()">Stop Timer</button>
+    </body>
+</html>
+
+<script>
+    let id;
+    let i = 0;
+    function start(){
+        id = setInterval(function(){
+            i++;
+            console.log(i);
+            document.querySelector("h1").innerText = i;
+        }, 1000);//1000(in milli seconds)
+    }
+    function stop(){
+        clearInterval(id);
+    }
+</script>

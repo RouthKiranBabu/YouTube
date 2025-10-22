@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>part06: With Form Tag</title>
+    </head>
+    <body>
+        <form id="LoginForm">
+            <input id = "username" type="text" placeholder="User Name" />
+            <input id = "password" type="text" placeholder="Enter Password" />
+            <input type = "submit" />
+        </form>
+    </body>
+</html>
+
+<script>
+    document.querySelector('#LoginForm').addEventListener('submit', printValues);
+    function printValues(){
+        event.preventDefault();
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        console.log(username, password);
+        //creates the h1 tag
+        var head = document.createElement("h1");
+        head.innerText = username;
+        //creates the button
+        var btn = document.createElement("button");
+        btn.textContent = 'Click';
+        //This will create the element and keep in the body tag
+        document.querySelector("body").append(head, btn);
+        console.log(head);
+    }
+</script>

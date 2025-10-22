@@ -1,0 +1,77 @@
+Client Server Model
+
+How do computers talk over the internet?
+client and server communications
+from (client to server) as request and 
+(server to client) as response
+client are crome, compass, command prompt 
+server like CPU.
+
+general format of a request/response
+has header and body
+
+ip address is uniquely identify the computer 
+when there is sending response to the 
+computer 
+
+the form of the ip address is like:
+#.#.#.#
+where each # represents the value from 0 to 255
+so the combinations will be from 
+0.0.0.0 to 255.255.255.255
+to total combinations will be 255*255*255*255
+
+message will be sent by using the TCP Connection
+first: client to server (SYN)
+second: server to client (SYN-ACK)
+third: client to server(ACK) -> server connection ok
+
+HTTP Request Header Fields:
+----------------------------------------------------------------------
+method   |   action              |accompanied by content in request body?
+---------|-------------------------------------------------------------
+GET      |   Indicates that      |No
+         |   some data needs     |
+         |   to be retrieved     |
+POST     |   Submit some content |(the entry that is submitted)
+         |   to the path         |
+         |   requested.it will   |
+         |   either create or    |
+         |   update the content  |
+             if it already exists|
+PUT      |   Replace some        |(the content to be replaced)
+         |   content on the      |
+         |   path requested      |                 
+DELETE   |   Delete some content |(the content to be deleted)
+         |   on the path         |
+         |   requested           | 
+
+go to the inspect -> Network -> and then refresh the page (or f5).
+select the items present in the Name -> Headers in the general where
+we have the request method like (POST GET, etc), request URL, 
+
+for the status code: 200 means every thing is ok.
+status code: 201 means we have created if we successfully register.
+status code: 202 means for Accepted 
+status code: 404 means not found
+status code: 405 means method not allowed
+for 405 status code: method is not allowed for this particular URL 
+if we want to create the same methods for different URL is possible
+but if we use the post urls for the get or vice versa is not possible 
+status code: 408 means request timed out
+status code: 500 means internal server Error means there might be 
+bugs will be present in the port or at the web server 
+status code: 503 means for service unavailable
+
+any website is posted is given in unique address and this address 
+is also in form of #.#.#.# if I type Masai school there might be 
+some server which might be hosting masai school there might be some 
+ip address for that masai school but I do not know the IP address 
+of that particular address if we type the masai school how will I 
+know how will the system know what is the IP address of the masai 
+school there might be some intermediate person which convert the 
+human language and the IP address that we want to find and then 
+using the IP addresses basically handshake will be possible and 
+then we get the response. the internal person is DNS(Domain Name 
+System) then IP addresses will be established and then the TCP handshake
+will be established and then we will get the response

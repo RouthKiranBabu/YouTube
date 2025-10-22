@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>part02: With Form Tag</title>
+    </head>
+    <body>
+        <form id="LoginForm">
+            <input id = "username" type="text" placeholder="User Name" />
+            <input id = "password" type="text" placeholder="Enter Password" />
+            <input type = "submit" />
+        </form>
+    </body>
+</html>
+
+<script>
+    document.querySelector('#LoginForm').addEventListener('submit', printValues);
+    function printValues(){
+        // It shows but vanishes out quickly
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        console.log(username, password);
+    }
+</script>

@@ -1,0 +1,48 @@
+JavaScript is the synchronous, blocking and single threaded
+synchronous means it is executed line by line.
+blocking becouse above code of forloop will run first and 
+then the forloop this forloop will run until finish which 
+means it will block the below code of forloop until the 
+forloop is finished.
+
+each thread can do only one task per time. it is the single 
+threaded language becouse one line is executed and then the 
+next line is executed JavaScript has one such thread that 
+is the main thread which is used for execution 
+
+for the synchronous counter: in the JavaScript
+let first line takes 10sec then next line takes 8sec and the 
+third line takes 5sec so totally it will take 10+8+5 = 23sec
+
+for the asynchronous counter: all the lines of code will start
+immediately and next line will not wait for the first to finish 
+like each line will execute in the same time. if the first line 
+takes 10sec, second line takes 8sec, third line takes 15sec.
+so for completion of the code it will take 15 sec. by the help of 
+web browser APIs we can bring the asynchronous behaviour in the 
+JavaScript.
+
+GEC(Global Execution Context): 2 phases:
+memory phase => name = undefined
+function test(){
+    console.log(1);
+}
+execution phase => name = "masai"
+test()
+local/function execution context => memory/execution 
+
+How is Execution Context created and how is the program run?
+When JavaScript code runs Global Execution Context (GEC) is 
+created. Execution of code is happening in two phases:
+
+Phase 1 (Creation Phase) is allocating memory to the variables
+ and functions. For all variables value stored in memory is
+  undefined and functions are copied in memory.
+In Phase 2 (Execution Phase) JavaScript code is executed 
+line by line and it is defining variables in memory here. 
+Every function invoked creates its own local execution 
+context, which is put in call stack (explained in the next 
+chapter).
+
+link to visualize how the code execution happens line by line:
+https://pythontutor.com/

@@ -1,0 +1,114 @@
+------------------------------------------------------------
+For visual studio code with github:
+video link: https://youtu.be/i_23KUAEtUM?si=gWC7_yqGQT65t9IF
+install as it is mostly press next for install
+github
+download github link:
+https://git-scm.com/download/win
+ReleaseNotes.html:
+file:///C:/Program%20Files/Git/ReleaseNotes.html
+------------------------------------------------------------
+Create the new repository:
+Usually Projects starts from zero need a storage to store
+so create a new repository initially in the github by adding 
+the README.md
+
+next need to clone:
+1. In the command prompt choose the location you want to 
+clone the project.
+2. code used: 
+git clone HTTPS_Clone_Link
+3. HTTPS_Clone_Link gets from Code(green button).
+HTTPS_Clone_Link: https://github.com/RouthKiranBabu/testRepository.git
+4. eg: C:\Users\kiran\OneDrive\Desktop\Basics Of Frontend Develop
+ment - Part2\08Part>git clone https://github.com/RouthKiranBabu/testRepository.git
+Cloning into 'testRepository'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+to add file: 
+git add fileName
+to add everything: 
+git add .
+
+to commit:
+git commit -m "commit message"
+
+to push:
+git push origin branchName
+
+for status:
+go in repository folder(command prompt) and use command
+git status
+
+--------------------example------------------------
+eg: C:\Users\kiran\OneDrive\Desktop\Basics Of Frontend Develo
+pment - Part2\08Part\testRepository>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean
+--------------------------------------------
+
+if you modify the README.md file present in 
+the repository folder and use command (git status)
+
+C:\Users\kiran\OneDrive\Desktop\Basics Of Frontend Develo
+pment - Part2\08Part\testRepository>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+no changes added to commit (use "git add" and/or "git commit -a")
+
+to save changes 
+Now to add:
+use command(git add .) and then check the status by using the 
+command(git status) then it(README.md) shows green color
+-------------------example-------------------------
+C:\Users\kiran\OneDrive\Desktop\Basics Of Frontend Develop
+ment - Part2\08Part\testRepository>git add .
+C:\Users\kiran\OneDrive\Desktop\Basics Of Frontend Develop
+ment - Part2\08Part\testRepository>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+--------------------------------------------
+
+Now to commit:
+command: git commit -m "This is the space for message for commit"
+--------------------Example------------------------
+eg: C:\Users\kiran\OneDrive\Desktop\Basics Of Frontend Develop
+ment - Part2\08Part\testRepository>git commit -m "This is the
+first message for commit."
+[main bc7285a] This is the first message for commit.
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+C:\Users\kiran\OneDrive\Desktop\Basics Of Frontend Develop
+ment - Part2\08Part\testRepository>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+----------------------------------------------------
+
+Now to push:
+command: git push origin 
+--------------------Example------------------------
+C:\Users\kiran\OneDrive\Desktop\Basics Of Frontend Develop
+ment - Part2\08Part\testRepository>git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/RouthKiranBabu/testRepository.git
+   9c695d1..bc7285a  main -> main
+----------------------------------------------------
+
+Now refresh the github page to see changes.

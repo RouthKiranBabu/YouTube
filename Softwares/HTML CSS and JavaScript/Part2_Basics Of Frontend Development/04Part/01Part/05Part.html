@@ -1,0 +1,27 @@
+<!--Program to change the heading on click of the button-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1 id = "head">Masai school</h1>
+        <button onclick="changeHeading()">Change Heading!</button>
+    </body>
+</html>
+<script>
+    /*
+    on clicking the button Shows 
+    <h1 id = "head">Masai school</h1>
+    that many times*/
+    function changeHeading(){
+        var heading = document.getElementById("head");
+        console.log(heading);
+        if (heading.innerText == "Masai school"){
+            heading.innerText = "Student Friendly";
+        }else{
+            heading.innerText = "Masai school";
+        }
+        
+    }
+</script>

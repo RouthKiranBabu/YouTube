@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part4</title>
+    </head>
+    <style>
+        img{
+            height: 20%;
+            width: 20%;
+        }
+    </style>
+    <body>
+        <img src="jagatGuruGodKrishna.jpg" alt="Hare Krishna" />
+        <div>
+            <p>JagatGuru: <span id = "likeCount"></span></p>
+            <p>God: <span id = "dislikeCount"></span></p>
+        </div>
+        <div><button id = "like">Vote JagatGuru</button>
+            <button id = "dislike">Vote God</button></div>
+        
+    </body>
+</html>
+
+<script>
+    document.getElementById("like").addEventListener('click', likeFun);
+    //to get the values from the local storage if the key exits
+    //otherwise empty
+    //or delete by select the key in the local storage table and 
+    //press the delete button
+    var likeCount = 0 || localStorage.getItem("JagatGuru");
+    function likeFun(){
+        likeCount++;
+        document.getElementById('likeCount').innerText = likeCount;
+        localStorage.setItem("JagatGuru", likeCount);
+    }
+    document.getElementById("dislike").addEventListener('click', dislikeFun);
+    var dislikeCount = 0 || localStorage.getItem("God");
+    function dislikeFun(){
+        dislikeCount++;
+        document.getElementById('dislikeCount').innerText = dislikeCount;
+        localStorage.setItem("God", dislikeCount);
+    }
+</script>

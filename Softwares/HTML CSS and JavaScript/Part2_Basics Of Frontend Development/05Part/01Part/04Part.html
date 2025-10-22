@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>part04: With Form Tag</title>
+    </head>
+    <body>
+        <form id="LoginForm">
+            <input id = "username" type="text" placeholder="User Name" />
+            <input id = "password" type="text" placeholder="Enter Password" />
+            <input type = "submit" />
+        </form>
+        <!-- select the line and click on ctrl + / to make it comment -->
+        <!-- <h1 id = "head"></h1> -->
+    </body>
+</html>
+
+<script>
+    document.querySelector('#LoginForm').addEventListener('submit', printValues);
+    function printValues(){
+        // Now due to preventDefault it shows value at the console of inspect
+        event.preventDefault();
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        console.log(username, password);
+        // creates the element
+        var head = document.createElement("h1");
+        // setting the inner text to have value
+        head.innerText = username;
+        //document.querySelector("body").append(head);
+        console.log(head);
+        // we can able to see the element showing in the html page
+        // this happens becouse select the inspect and go to the Elements 
+        // tab and search for h1 tag which is not shown we have 
+        /*we have created but not kept at the body tag*/
+    }
+</script>

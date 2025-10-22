@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+    </head>
+    <body>
+        <input id = "username" type="text" placeholder="User Name" />
+        <input id = "password" type="text" placeholder="Enter Password" />
+        <button id = "submit">Submit</button>
+    </body>
+</html>
+
+<script>
+    document.getElementById('submit').addEventListener("click", submitForm);
+
+    function submitForm(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        console.log(username, password);
+    }
+</script>

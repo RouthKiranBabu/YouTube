@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Storage</title>
+    </head>
+    <body>
+        <h1>Masai School</h1>
+    </body>
+</html>
+
+<script>
+    console.log("Local Storage");
+    localStorage.setItem("studentName", "NameValue");
+    localStorage.setItem("studentAge", 23);
+    localStorage.setItem("studentPresent", true);
+    var arr = [1, 2, 3, 4];
+    console.log(arr, typeof arr);
+    //provides 	[1,2,3,4] as the value for the studentArr
+    localStorage.setItem("studentArr", JSON.stringify(arr));
+
+    var arr = localStorage.getItem("studentArr");
+    arr = JSON.parse(arr);
+    console.log(arr, typeof arr);
+</script>
