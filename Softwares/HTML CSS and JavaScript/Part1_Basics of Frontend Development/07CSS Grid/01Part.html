@@ -1,0 +1,46 @@
+<!--
+Flex is one dimensional which moves either the left 
+or to the right 
+
+while grid is two dimensional 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid</title>
+    </head>
+    <style>
+        #container{
+        }
+
+        #container > div{
+            padding: 20px;
+            font-size: 20px;
+            color:white;
+        }
+
+        #container > div:nth-child(1){
+            background-color: cornflowerblue;
+        }
+
+        #container > div:nth-child(2){
+            background-color: crimson;
+        }
+
+        #container > div:nth-child(3){
+            background-color: mediumseagreen;
+        }
+
+        #container > div:nth-child(4){
+            background-color: rgb(197, 26, 197);
+        }
+    </style>
+    <body>
+        <div id = "container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part2</title>
+    </head>
+    <style>
+        /*100(for container id selector) + 0(for child combinator) + 
+        100(for masai) = total score 200
+        if you make this as comment then it appears as the brown*/
+        #container > #masai{
+            color: teal;
+        }
+
+        /*score of 100*/
+        #masai {
+            color: thistle;
+        }
+
+        /*tag selector score is 1*/
+        h1 {
+            color: blue;
+        }
+
+        /*class selector score is 10*/
+        .school{
+            color: orange;
+        }
+
+        /*1(tag selector) + 0(child combinator) 
+        + 1(h1 tag) = total score 2*/
+        div > h1{
+            color:red;
+        }
+
+        /*1(div tag) + 0(child combinator) + 100(id masai) = 101(total score)*/
+        div > #masai{
+            color: magenta;
+        }
+
+        /*1(div tag) + 0(child combinator) + 10(for class) = 11(total score)*/
+        div > .school{
+            color: green;
+        }
+
+        /*100(for the id) + 0(child combinator) + 10(for class) = 110(total score)*/
+        #container > .school{
+            color:brown;
+        }
+    </style>
+    <body>
+        <div id = "container">
+            <h1 class = "school" id = "masai">Masai School</h1>
+        </div>
+    </body>
+</html>
+
+<!--
+(ul.class) -> 1(for ul tag) + 10(for class .class) = 11(total score)
+
+(h1 + p) -> 1(for h1 tag) + 0(for adjacent sibling selector)
+ + 1(for p tag) = 2(total score)
+
+(.heading > .main) -> 10(for class) + 0 + 10(for main class) = 20(total score)
+
+(.heading > #main+p) -> 10(for class) + 0(for child combinator) + 100(for id)
++ 0(for adjacent sibling combinator) + 1(for tag selector) = 111(total score)
+
+#heading p ul li .box li -> 100(for id) + 1(tag selector) + 1(ul tag selector)
++ 1(li tag selector) + 10(class .box) + 1(for li) = 114
+
+#navbar > p + #demo -> 100(for id) + 0(for child combinator) + 1(tag selector
+p) + 0(adjacent sibling selector) + 100(for id demo) = 201(total score)
+
+::(double colon) for the pseudo element which has the score of 1
+h1 ~ p::first-letter -> 1(for tag h1) + 0 + 1(for tag p) + 1(for pseudo
+element) = 3(total score)
+
+h1 p:hover -> 1 + 1 + 10(for the pseudo element) = 12(total score)
+
+selector name       score
+---------------------------
+inline              1000
+id                  100
+class,attribute,    10
+pseudo classes
+tag, pseudo         1
+element
+Universal,          0
+combinators
+(+, >, ",)
+-->

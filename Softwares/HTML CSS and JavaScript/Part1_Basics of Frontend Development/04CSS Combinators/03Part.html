@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part3</title>
+    </head>
+    <style>
+        /*I have used the space between two selectors so it is a 
+        descendent combinator 
+        first selector is the id selector and second selector is the 
+        tag selector and space between them indicates the descendent
+        combinator is used
+        at the output one to five, eight and nine are teal and six and 
+        seven are not teal*/
+        #parent p {
+            color: teal;
+        }
+    </style>
+    <body>
+        <div id = "parent">
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <div>
+                <p>Paragraph 8</p>
+                <p>Paragraph 9</p>
+            </div>
+        </div>
+        <p>Paragraph 6</p>
+        <p>Paragraph 7</p>
+    </body>
+</html>

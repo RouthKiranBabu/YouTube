@@ -1,0 +1,88 @@
+<!--
+Flex is one dimensional which moves either the left 
+or to the right 
+
+while grid is two dimensional 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid</title>
+    </head>
+    <style>
+
+        #container{
+            /*Grid is the display type*/
+            display: grid;
+            /*if two columns are required then two values must 
+            need to be provided if one value is provided then
+            it shows only one column
+            grid-template-columns: 100px;
+            grid-template-columns: 100px 100px;*/
+
+            /*If there are more columns like 100 columns
+            then we dont need to write 100px again and again
+            in 
+            grid-template-columns: 100px 100px;
+            so we use the 
+            repeat(no of times, size of each col);
+            grid-template-columns: repeat(2, 100px);*/
+
+            /*If we want to resize the width in terms of percentage
+            with respect to the window width*/
+            grid-template-columns: repeat(2, 45%);
+
+            /*fr stands for the fraction
+            for the 50% of the whole width => 1/2 fr 2, 1fr 
+            instead of 45% we can use the fr*/
+            grid-template-columns: repeat(2, 1fr);
+
+            /*100px height for the first row and 200px height 
+            for the second row*/
+            grid-template-rows: 100px 200px;
+            /*to make the gap between the rows
+            grid-row-gap: 20px;*/
+            /*to get the column gap
+            grid-column-gap: 40px;*/
+
+            /*We can directly make the gap for both 
+            rows and columns in the singe line
+            where 20 px for the row gap and 
+            40 px for the column gap*/
+            gap: 20px 40px;
+            /*If you want to provide the same gap
+            for both rows and columns we can use 
+            gap: 20px;*/
+        }
+
+        #container > div{
+            padding: 20px;
+            font-size: 20px;
+            color:white;
+        }
+
+        #container > div:nth-child(1){
+            background-color: cornflowerblue;
+        }
+
+        #container > div:nth-child(2){
+            background-color: crimson;
+        }
+
+        #container > div:nth-child(3){
+            background-color: mediumseagreen;
+        }
+
+        #container > div:nth-child(4){
+            background-color: rgb(197, 26, 197);
+        }
+    </style>
+    <body>
+        <div id = "container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </body>
+</html>

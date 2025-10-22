@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part7</title>
+        <style>
+            /*tag selector*/
+            p {
+                color: brown;
+            }
+            .masai {
+                color: green;
+                background-color: yellow;
+            }
+            #school {
+                color: blue;
+                text-align: center;
+            }
+            * {
+                color: yellow;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><p class = "masai" id = "school" style = "color: red">Masai school</p></h1>
+        <h1><p class = "masai" id = "school">Masai school</p></h1>
+        <h1><p class = "masai">Masai school</p></h1>
+        <h1><p>Masai school</p></h1>
+        <h1>Masai school</h1>
+    </body>
+</html>
+
+<!--
+We have the priority based selector priority
+S has the higher priority and U is having the low priority
+SICTU:
+S = style
+eg: <h1 style="color: red;">Masai school</h1>
+
+I = id selector
+C = class selector
+T = tag selector
+U = universal selector
+-->

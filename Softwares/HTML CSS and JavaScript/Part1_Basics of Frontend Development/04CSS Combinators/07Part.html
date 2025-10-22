@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part7</title>
+    </head>
+    <style>
+        /*For selecting 8 and 9 paragraph space between two selector
+        for the descendent selector and > for the child selector*/
+        #parent div > p {
+            background-color: black;
+            color:red;
+        }
+    </style>
+    <body>
+        <div id = "parent">
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <div>
+                <p>Paragraph 8</p>
+                <p>Paragraph 9</p>
+            </div>
+        </div>
+        <p>Paragraph 6</p>
+        <p>Paragraph 7</p>
+    </body>
+</html>
+<!--
+child combinator(>): selector1 > selector2
+descendent combinator(space): selector1 selector2
+adjacent sibling(+): selector1 + selector2
+general sibling(~): selector1 ~ selector2
+-->

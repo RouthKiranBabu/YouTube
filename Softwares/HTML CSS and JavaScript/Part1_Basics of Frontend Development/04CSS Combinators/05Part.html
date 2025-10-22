@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part5</title>
+    </head>
+    <style>
+        /*for the general sibling selector for the id parent there are two
+        general sibling which are paragraph 6 and paragraph 7 to give the 
+        style to paragraph 6 and 7*/
+        #parent ~ p {
+            background-color: black;
+            color:red;
+        }
+    </style>
+    <body>
+        <div id = "parent">
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <div>
+                <p>Paragraph 8</p>
+                <p>Paragraph 9</p>
+            </div>
+        </div>
+        <p>Paragraph 6</p>
+        <p>Paragraph 7</p>
+    </body>
+</html>

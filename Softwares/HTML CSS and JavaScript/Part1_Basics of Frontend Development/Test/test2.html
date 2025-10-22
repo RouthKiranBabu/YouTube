@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part1</title>
+    </head>
+    <style>
+        #parent > div{
+            color: red;
+            background-color: black;
+            font-size: 40px;
+        }
+        #parent ~ div{
+            color: blue;
+        }
+        #parent + div{
+            color: white;
+            background-color: blue;
+            font-size: 60px;
+            text-align: center;
+        }
+        #parent > div > div{
+            color:blueviolet;
+            font-size: 30px;
+        }
+        
+    </style>
+    <body>
+        <div id = "parent">
+            <div>This is paragraph 1</div>
+            <div>This is paragraph 2</div>
+            <div>
+                <div>This is paragraph 7</div>
+                <div>This is paragraph 8</div>
+            </div>
+            <div>This is paragraph 3</div>
+            <div>This is paragraph 4</div>
+        </div>
+        <div>This is paragraph 5</div>
+        <div>This is paragraph 6</div>
+    </body>
+</html>

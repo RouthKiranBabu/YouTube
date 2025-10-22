@@ -1,0 +1,20 @@
+Javascript is the scripting language that is one of the core to develop
+websites.
+
+Most popular Javascript frameworks as per Github
+Vue.js 
+React
+Node.js 
+Next JS 
+AngularJS
+...
+
+to run the program install the node.js and at the terminal or command
+prompt syntax to run the program is by 
+example:
+node 01Part.js
+
+or you can run the program in the visual studio code
+by using the 
+ctrl + alt + n 
+output is visible at the OUTPUT tab

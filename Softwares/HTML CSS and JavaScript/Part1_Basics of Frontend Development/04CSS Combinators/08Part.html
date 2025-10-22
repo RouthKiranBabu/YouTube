@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part8</title>
+    </head>
+    <style>
+        /*p tag is not nearer to the h1 tag*/
+        h1 + p {
+            background-color: black;
+            color:red;
+        }
+        /*we can use the comma and apply the style to the h1 tag*/
+        h1 + p, h1 {
+            background-color: black;
+            color:red;
+        }
+        /*p tag is nearer to the h4 tag*/
+        h4 + p {
+            background-color: black;
+            color:red;
+        }
+        /*styling the anchor tag*/
+        a[target = "_blank"]{
+            color:red;
+            background-color: white;
+            text-decoration:none;
+            font-size: 30px;
+        }
+
+        button{
+            color:thistle;
+            background-color: tomato;
+            border: none;
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        /*psuedo-class => selector:class {}*/
+        button:hover{
+            font-size: 40px;
+            background-color: teal;
+        }
+
+        /*psuedo element => selector::element {} */
+        /*to style the first line of the paragraph*/
+        #para::first-line {
+            color: tomato;
+            font-size: 20px;
+        }
+
+        /*Styling the first letter*/
+        #para::first-letter {
+            color: red;
+            font-size: 40px;
+        }
+
+        /*After the paragraph making the content as the masai*/
+        #para::after {
+            content: " - masai";
+        }
+
+        #para::before {
+            content: "Hello";
+        }
+    </style>
+    <body>
+        <p>this is sentence one</p>
+        <h1>This is header one</h1>
+        <h2>This is header two</h2>
+        <p>This is sentence two</p>
+        <p>This is sentence three</p>
+        <h3>This is header three</h3>
+        <h4>This is header four</h4>
+        <p>This is sentence four</p>
+        <p>This is sentence five</p>
+
+        <h1>
+            Masai school >> <a href="https://masaischool.com/" target = "_blank">click here!</a>
+        </h1>
+
+        <button>Login</button>
+
+        <!--Write Lorem you gets the paragraph-->
+        <p id="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Excepturi nulla quisquam doloremque rerum, sint beatae 
+            dolorum nihil expedita, iusto voluptatem iste mollitia 
+            blanditiis vero tempore, distinctio nobis neque esse libero.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Excepturi nulla quisquam doloremque rerum, sint beatae 
+            dolorum nihil expedita, iusto voluptatem iste mollitia 
+            blanditiis vero tempore, distinctio nobis neque esse libero.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Excepturi nulla quisquam doloremque rerum, sint beatae 
+            dolorum nihil expedita, iusto voluptatem iste mollitia 
+            blanditiis vero tempore, distinctio nobis neque esse libero.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Excepturi nulla quisquam doloremque rerum, sint beatae 
+            dolorum nihil expedita, iusto voluptatem iste mollitia 
+            blanditiis vero tempore, distinctio nobis neque esse libero.
+        </p>
+        
+    </body>
+</html>

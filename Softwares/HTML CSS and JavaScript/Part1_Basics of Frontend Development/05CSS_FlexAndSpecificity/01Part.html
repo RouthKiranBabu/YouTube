@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part1</title>
+    </head>
+    <style>
+        /*Paragraph 1 to 5 becomes teal and 6, 7, 8 becomes red
+        becouse score of the (div > p) is greater than p.
+        1(for div) + 0(child combinator) + 1(for p) = 2(total score)*/
+        div > p{
+            color:teal;
+        }
+        /*only one tag is present so score is 1*/
+        p {
+            color: red;
+        }
+    </style>
+    <body>
+        <div>
+            <p>paragraph 1</p>
+            <p>paragraph 2</p>
+            <p>paragraph 3</p>
+            <p>paragraph 4</p>
+            <p>paragraph 5</p>
+        </div>
+        <p>paragraph 6</p>
+        <p>paragraph 7</p>
+        <p>paragraph 8</p>
+    </body>
+</html>

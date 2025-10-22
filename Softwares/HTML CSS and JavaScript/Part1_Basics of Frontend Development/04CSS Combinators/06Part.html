@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part6</title>
+    </head>
+    <style>
+        /*Adjacent sibling of the parent id is paragraph 6
+        sibling of parent id is pargraph 6 and 7 and amoung
+        this 6 and 7 only 6 is the nearest sibling of the 
+        parent id*/
+        #parent + p {
+            background-color: black;
+            color:red;
+        }
+    </style>
+    <body>
+        <div id = "parent">
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <div>
+                <p>Paragraph 8</p>
+                <p>Paragraph 9</p>
+            </div>
+        </div>
+        <p>Paragraph 6</p>
+        <p>Paragraph 7</p>
+    </body>
+</html>

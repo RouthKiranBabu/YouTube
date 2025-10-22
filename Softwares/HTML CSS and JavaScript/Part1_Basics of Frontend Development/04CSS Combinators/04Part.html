@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part3</title>
+    </head>
+    <style>
+        /*If we want to change values of paragraph one to five
+        at the output paragraph one to five are red the syntax
+        for the child selector is that
+        selector1 > selector2 {}
+        id selector(#parent) > tag selector(p) {} */
+        #parent > p {
+            color: red;
+        }
+    </style>
+    <body>
+        <div id = "parent">
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <div>
+                <p>Paragraph 8</p>
+                <p>Paragraph 9</p>
+            </div>
+        </div>
+        <p>Paragraph 6</p>
+        <p>Paragraph 7</p>
+    </body>
+</html>

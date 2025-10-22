@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part1</title>
+    </head>
+    <style>
+        .para {
+            color: red;
+        }
+        /*syntax for the combinators
+        selector1 combinatorSymbol selector2 {}
+
+        for the descendant selector(space)
+        selector1 selector2 {}
+        */
+    </style>
+    <body>
+        <!--
+        descendant related to child and grandchild
+        
+        paragraph one to five is the child selector of the p tag
+        with the div tag of id parent we cannot consider the 
+        paragraph 8 and 9 as the child of the div tag of id parent
+        becouse 8 and 9 are treated as the grandchild of the div
+        id named as parent
+        
+        for the child selector we have
+        selector1 > selector2 {}
+        
+        for the general sibling selector(~) consins, brothers and sisters
+        syntax
+        selector1 ~ selector2 {}
+        
+        Adjacent sibling selector(+): for the div of id parent adjacent
+        sibling is paragraph 6 becouse it is below or adjacent to it
+        for the paragraph one adjacent sibling is the paragraph is 
+        paragraph is paragraph 2 and not 3 to 5 paragraph.
+        syntax
+        selector1 + selector2 {}-->
+        <div id = "parent">
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <div>
+                <p>Paragraph 8</p>
+                <p>Paragraph 9</p>
+            </div>
+        </div>
+        <p>Paragraph 6</p>
+        <p>Paragraph 7</p>
+    </body>
+</html>

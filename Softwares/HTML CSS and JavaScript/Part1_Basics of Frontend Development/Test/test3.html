@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part1</title>
+    </head>
+    <style>
+        #parent div, p{
+            color:red;
+            background-color: black;
+            font-size: 30px;
+        }
+        /*a tag*/
+        a[alt = 'Test']{
+            text-decoration: none;
+            color:white;
+            background-color: black;
+        }
+        a[alt = 'Test']:hover{
+            text-decoration: underline;
+            color:green;
+            background-color: white;
+        }
+        /*button*/
+        button {
+            color:white;
+            background-color: blue;
+            font-size: 40px;
+            border:none;
+            padding: 20px 10px 40px 10px;
+        }
+        button:hover{
+            color:white;
+            background-color: green;
+            font-size: 60px;
+            border:none;
+            content: Hovered;
+            padding: 10px 5px 20px 5px;
+        }
+        /*para id*/
+        #para::first-letter{
+            color:blue;
+            font-size: 40px;
+            background-color: white;
+        }
+        #para::first-line{
+            color:red;
+            font-size: 30px;
+            background-color: lightblue;
+        }
+        #para::before{
+            color:white;
+            font-size: 50px;
+            background-color: black;
+            content:"This is first";
+        }
+        #para::after{
+            content: " - Last letted added";
+        }
+    </style>
+    <body>
+        <div id = "parent">
+            <div>This is paragraph 1</div>
+            <div>This is paragraph 2</div>
+            <div>
+                <div>This is paragraph 7</div>
+                <div>
+                    <p>This is paragraph 9</p>
+                    <p>This is paragraph 10</p>
+                </div>
+                <div>This is paragraph 8</div>
+            </div>
+            <div>This is paragraph 3</div>
+            <div>This is paragraph 4</div>
+        </div>
+        <div>This is paragraph 5</div>
+        <div>This is paragraph 6</div>
+        <p>This is having paragraph tag.</p>
+        <h1><a href="https://masaischool.com/" alt="Test">Masai school</a></h1>
+        <button>
+            <div>Button</div>
+        </button>
+        <p id="para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, ullam repellendus ducimus debitis consequatur nesciunt minima nobis neque qui est unde totam aliquid impedit dolorem fugiat rerum quidem, ratione iure!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, ullam repellendus ducimus debitis consequatur nesciunt minima nobis neque qui est unde totam aliquid impedit dolorem fugiat rerum quidem, ratione iure!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, ullam repellendus ducimus debitis consequatur nesciunt minima nobis neque qui est unde totam aliquid impedit dolorem fugiat rerum quidem, ratione iure!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, ullam repellendus ducimus debitis consequatur nesciunt minima nobis neque qui est unde totam aliquid impedit dolorem fugiat rerum quidem, ratione iure!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, ullam repellendus ducimus debitis consequatur nesciunt minima nobis neque qui est unde totam aliquid impedit dolorem fugiat rerum quidem, ratione iure!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, ullam repellendus ducimus debitis consequatur nesciunt minima nobis neque qui est unde totam aliquid impedit dolorem fugiat rerum quidem, ratione iure!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, ullam repellendus ducimus debitis consequatur nesciunt minima nobis neque qui est unde totam aliquid impedit dolorem fugiat rerum quidem, ratione iure!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, ullam repellendus ducimus debitis consequatur nesciunt minima nobis neque qui est unde totam aliquid impedit dolorem fugiat rerum quidem, ratione iure!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, ullam repellendus ducimus debitis consequatur nesciunt minima nobis neque qui est unde totam aliquid impedit dolorem fugiat rerum quidem, ratione iure!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, ullam repellendus ducimus debitis consequatur nesciunt minima nobis neque qui est unde totam aliquid impedit dolorem fugiat rerum quidem, ratione iure!
+        </p>
+    </body>
+</html>
+<!--
+
+-->

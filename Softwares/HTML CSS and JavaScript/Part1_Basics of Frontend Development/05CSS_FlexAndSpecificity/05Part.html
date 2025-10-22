@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part5</title>
+    </head>
+    <style>
+        body{
+            margin:0;
+        }
+        .container{
+            border: 6px solid black;
+            display: flex;
+            /*by default
+            align-items: stretch;
+
+            When the flex start from the start
+            align-items: flex-start;
+            
+            when the flex starts from the bottom
+            align-items: flex-end;
+            
+            if we want to move the content at the middle
+            align-items: center;*/
+
+            align-items: baseline;
+        }
+        .container > div{
+            color: white;
+            font-size: 25px;
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+        }
+        .container > div:first-child{
+            background-color: cadetblue;
+            padding: 75px 0;
+        }
+        .container > div:nth-child(2){
+            background-color: coral;
+            padding: 50px 0;
+        }
+        .container > div:last-child{
+            background-color: magenta;
+            padding: 100px 0;
+        }
+    </style>
+    <body>
+        <div class = "container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </body>
+</html>
+<!--
+for the child properties
+1.order
+-->

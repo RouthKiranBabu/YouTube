@@ -1,0 +1,52 @@
+<!--
+(ctrl + shift + c) or (ctrl + shift + i) to open inspect type of window
+and try to pull the border
+
+Media Queries takes different sizes of screen based on the different
+sizes we can apply the media queries
+
+if I want different styling for the mobile screen and different 
+styling for the laptop screen different way of styling for the 
+laptop screen
+
+Media Queries will check the dimension of the screen and be responsive
+
+basic structure of the media queries
+@media screen and (min-width:) and (max-width:)
+@media: means the media queries has been used at this particular point
+min-width and max-width represents the the device minimum and maximum size
+whatever the CSS is given inside is applied there
+@media screen and (min-width:400px) and (max-width:600px){
+    CSS properties
+}
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Queries</title>
+    </head>
+    <style>
+        body{
+            /*If the page is maximized then the background color is teal*/
+            background-color: teal;
+        }
+        @media screen and (min-width: 449px) and (max-width: 924px) {
+            body{
+                /*If we make the window screen in between 600px to 800px
+                then the background-color is crimson*/
+                background-color: crimson;
+            }
+        }
+        @media screen and (max-width: 449px) {
+            body{
+                /*If we make the window screen in between 600px to 800px
+                then the background-color is crimson*/
+                background-color: blue;
+            }
+        }
+    </style>
+    <body>
+        
+    </body>
+</html>
