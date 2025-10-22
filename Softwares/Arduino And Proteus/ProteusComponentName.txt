@@ -1,0 +1,32 @@
+Voltage Source: BATTERY Multi-cell
+LED: LED-Blue ACTIVE Animated LED model(Blue)
+Resistor: MINRES330R or RESISTOR ASIMMDLS Analog resistor primitive
+	Minres can choose the resistance value
+	example: MINRES100K has 100k Resistance
+Switch: SWITCH
+	Description: Interactive SPST switch(Latched Action)
+DC Voltmeter: Go to the Virtual Instruments Mode -> DC VOLTMETER
+Sine Wave: VSINE, ASIMMDLS
+	Description: Sine Wave AC Voltage Source
+	example: Amplitude = 12V, Frequency = 0.05
+Lamp(AC Light): Animated Light Blue
+	example: Nominal Voltage = 12V, Resistance = +1hms
+Push Button: SPST Push Button
+DC Source: Inside Generator Mode -> DC then double click to provide voltage -> OK
+Ground: Inside Terminals Mode -> GROUND
+Oscilloscope: In the Virtual Instruments Mode
+PIC16 Microcontroller: PIC16F877A
+Variable Resistor/Potentiometer/Preset: POT-HG
+	Description: High Granularity Interactive Potentiometer (Lin, Log or Antilog Law)
+Light Dependent Resistor(with torch for simulation): TORCH_LDR
+MOTOR or MOTOR-DC or MOTOR-SERVO or MOTOR-STEPPER or MOTOR-ENCODER also available in the category of Electromechanical
+Temperature Sensor: LM35 Precision Centigrade Temperature Sensor (-55C to 150C)
+Humidity Sensor: DHT  or DHT11 or DHT22 Humidity & Temperature Sensor.
+Keypad: KEYPAD-PHONE Interactive matrix keypad for phone
+Touchpad: TOUCHPAD
+Relay: RELAYS and choose the appropriate relay. Or you can go to "Switches and Relays" menu and select.
+Opto Coupler, Opto isolator: By typing the same keyword, these can be obtained. But yet you have to choose the appropriate one.
+example: 4N26 OPTO 6-Pin DIP Optoisolators Transistor Output.
+Thumbswitch-Hex(Provides the binary pattern output): Interactive 16 State Thumbwheel Switch (4 Bit Output)
+Logic State Indicator: LOGICPROBE(BIG)State Indicator - Large Version
+SOUNDER(Piezo Sounder model(Digital))

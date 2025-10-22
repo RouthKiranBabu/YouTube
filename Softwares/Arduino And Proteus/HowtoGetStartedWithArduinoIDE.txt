@@ -1,0 +1,8 @@
+write the code.
+file -> save as (eg: at Desktop).
+Select the board name as Arduino Uno.
+The click on check mark(Or Correct mark) for verify to compile code.
+The from sketch select 'Export compiled binary'(Ctrl+Alt+S).(Since we are using Proteus)
+Then at the proteus double click on the arduino.
+At the Program Files: select the hex file(eg: LEDBlinkingCode.ino.hex) in the folder LEDBlinkingCode
+Example Project Link: https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogReadSerial

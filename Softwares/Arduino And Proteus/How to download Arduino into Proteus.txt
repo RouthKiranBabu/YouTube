@@ -1,0 +1,3 @@
+Download the .rar file: https://drive.google.com/file/d/1yV5pCpzhq_Td8zuksWEae6Dqg-0E7l5v/view
+Copy: The files 'ARDUINO2.IDX' and 'ARDUINO2.LIB' at the path 'C:\Program Files (x86)\Labcenter Electronics\Proteus 8 Professional\DATA\LIBRARY'
+Then restart the proteus
