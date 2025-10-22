@@ -1,10 +1,6 @@
 <div align = "right">
  
-For Solution 👉 [Click Here](https://github.com/RouthKiranBabu/YouTube/tree/main/2025/000_Problem_Solving)
-</div>
-<div align = "left">
- 
-For Certificates 👉 [Click Here](https://github.com/RouthKiranBabu/YouTube/tree/main/2025/000_Problem_Solving)
+For Solution 👉 [Click Here](https://github.com/RouthKiranBabu/YouTube/tree/main/2025/000_Problem_Solving), Certificates 👉 [Click Here](https://github.com/RouthKiranBabu/YouTube/tree/main/Softwares#readme)
 </div>
 
 # Here’s a list of 100+ essential programming problems to improve problem-solving skills, categorized by difficulty:
