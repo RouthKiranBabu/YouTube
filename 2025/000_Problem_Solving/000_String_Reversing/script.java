@@ -1,20 +1,38 @@
+public static String reverseString(String input) {
+        if (input == null || input.isEmpty()) {
+            return input;
+        }
+
+        char[] chars = input.toCharArray();
+        int left = 0;
+        int right = chars.length - 1;
+
+        while (left < right) {
+            // Swap characters at left and right indices
+            char temp = chars[left];
+            chars[left] = chars[right];
+            chars[right] = temp;
+
+            left++;
+            right--;
+        }
+
+        return new String(chars);
+    }
+
+    public static void main(String[] args) {
+        String original = "Hello World";
+        String reversed = reverseString(original);
+        System.out.println("Reversed: " + reversed); // Output: dlroW olleH
+    }
+
+
+
+
 public class script {
     public static void main(String[] args) {
         String str = "hello";
         String reversed = new StringBuilder(str).reverse().toString();
-        System.out.println(reversed); // Output: "olleh"
-    }
-}
-
-public class ReverseString {
-    public static void main(String[] args) {
-        String str = "hello";
-        String reversed = "";
-        
-        for (int i = str.length() - 1; i >= 0; i--) {
-            reversed += str.charAt(i);
-        }
-        
         System.out.println(reversed); // Output: "olleh"
     }
 }
