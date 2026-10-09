@@ -1,3 +1,25 @@
+public class CaseFlipper {
+    public static String toggleCase(String str) {
+        char[] chars = str.toCharArray();
+        
+        for (int i = 0; i < chars.length; i++) {
+            char c = chars[i];
+            // Check if the character is an English letter
+            if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
+                chars[i] ^= 32; // Flips between uppercase and lowercase
+            }
+        }
+        
+        return new String(chars);
+    }
+
+    public static void main(String[] args) {
+        String input = "Hello World! 123";
+        String result = toggleCase(input);
+        System.out.println(result); // Outputs: hELLO wORLD! 123
+    }
+}
+
 public class script {
     public static void main(String[] args) {
         String input = "Hello WoRLd";
